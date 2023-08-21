@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+tools:ignore="HardcodedText"
+android:background="@drawable/layoutbg"
+xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#00ace6"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints,UselessLeaf">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Inscribe"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/encode_button"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="104dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_shape_encode"
+        android:padding="45dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/outline_enhanced_encryption_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/Encryption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/encode_button"
+        app:layout_constraintEnd_toEndOf="@+id/encode_button"
+        app:layout_constraintStart_toStartOf="@+id/encode_button"
+        app:layout_constraintTop_toTopOf="@+id/encode_button"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/decode_button"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_shape_decode"
+        android:padding="45dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/outline_no_encryption_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/encode_button"
+        app:layout_constraintVertical_bias="0.417"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/Decryption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decrypt"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/decode_button"
+        app:layout_constraintEnd_toEndOf="@+id/decode_button"
+        app:layout_constraintStart_toStartOf="@+id/decode_button"
+        app:layout_constraintTop_toTopOf="@+id/decode_button"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
